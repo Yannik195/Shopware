@@ -1,0 +1,241 @@
+<?php //Shopware%255CCore%255CCheckout%255CDocument%255CController%255CDocumentController%2523downloadDocument
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/document/{documentId}/{deepLinkCode}',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Document Management',
+                ],
+            ],
+            'summary' => [
+                1 => 'Download a document',
+            ],
+            'description' => [
+                1 => 'Download a document by its identifier and deep link code.',
+                'Identifier of the document to be downloaded.',
+                6 => 'A unique hash code which was generated when the document was created.',
+                10 => 'This parameter controls the `Content-Disposition` header. If set to `true` the header will be set to `attachment` else `inline`.',
+                14 => 'The document.',
+            ],
+            'operationId' => [
+                1 => 'downloadDocument',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[6],
+                    $o[10],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[14],
+                ],
+            ],
+            '_context' => [
+                1 => $o[20],
+                $o[5],
+                $o[4],
+                6 => $o[9],
+                $o[8],
+                10 => $o[13],
+                $o[12],
+                14 => $o[19],
+                $o[18],
+                $o[17],
+            ],
+            'name' => [
+                2 => 'documentId',
+                6 => 'deepLinkCode',
+                10 => 'download',
+            ],
+            'in' => [
+                2 => 'path',
+                6 => 'path',
+                10 => 'query',
+            ],
+            'required' => [
+                2 => true,
+                6 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+                6 => $o[7],
+                10 => $o[11],
+                15 => $o[16],
+            ],
+            'type' => [
+                3 => 'string',
+                7 => 'string',
+                11 => 'boolean',
+                16 => 'string',
+            ],
+            'pattern' => [
+                3 => '^[0-9a-f]{32}$',
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                1009,
+                8 => 1009,
+                1009,
+                12 => 1009,
+                1009,
+                17 => 1009,
+                1009,
+                1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                17 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                17 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[6],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[10],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                [
+                    $o[15],
+                ],
+                [
+                    $o[14],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'default' => [
+                11 => false,
+            ],
+            'response' => [
+                14 => '200',
+            ],
+            'content' => [
+                14 => [
+                    $o[15],
+                ],
+            ],
+            'mediaType' => [
+                15 => 'application/octet-stream',
+            ],
+            'format' => [
+                16 => 'binary',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                21 => '/api/_action/document/{documentId}/{deepLinkCode}',
+            ],
+            'name' => [
+                21 => 'api.action.download.document',
+            ],
+            'methods' => [
+                21 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[21],
+    ],
+    []
+); }];

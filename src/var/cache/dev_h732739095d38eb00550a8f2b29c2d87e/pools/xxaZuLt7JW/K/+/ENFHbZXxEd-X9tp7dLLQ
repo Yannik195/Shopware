@@ -1,0 +1,192 @@
+<?php //Shopware%255CCore%255CFramework%255CMessageQueue%255CApi%255CConsumeMessagesController%2523consumeMessages
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/message-queue/consume',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'System Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Consume messages from the message queue.',
+            ],
+            'description' => [
+                1 => 'This route can be used to consume messenges from the message queue. It is intended to be used if'."\n"
+                    .'no cronjob is configured to consume messages regulary.',
+                5 => 'The name of the transport in the messenger that should be processed.'."\n"
+                    .'See the [Symfony Messenger documentation](https://symfony.com/doc/current/messenger.html) for more information',
+                8 => 'Returns information about handled messages',
+                11 => 'The number of messages processed.',
+            ],
+            'operationId' => [
+                1 => 'consumeMessages',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[8],
+                ],
+            ],
+            '_context' => [
+                1 => $o[14],
+                $o[3],
+                4 => $o[7],
+                $o[6],
+                8 => $o[9],
+                10 => $o[13],
+                $o[12],
+            ],
+            'required' => [
+                2 => true,
+                4 => [
+                    'receiver',
+                ],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+                8 => [
+                    $o[10],
+                ],
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                1009,
+                9 => 1009,
+                12 => 1009,
+                1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                [
+                    $o[4],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[10],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                ],
+                10 => [
+                    $o[11],
+                ],
+            ],
+            'property' => [
+                5 => 'receiver',
+                11 => 'handledMessages',
+            ],
+            'type' => [
+                5 => 'string',
+                11 => 'integer',
+            ],
+            'response' => [
+                8 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                15 => '/api/_action/message-queue/consume',
+            ],
+            'name' => [
+                15 => 'api.action.message-queue.consume',
+            ],
+            'methods' => [
+                15 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[15],
+    ],
+    []
+); }];

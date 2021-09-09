@@ -1,0 +1,168 @@
+<?php //Shopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CAccountNewsletterRecipientRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.3.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'newsletter_recipient',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/account/newsletter-recipient',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Profile',
+                    'Newsletter',
+                ],
+            ],
+            'summary' => [
+                2 => 'Fetch newsletter recipients',
+            ],
+            'description' => [
+                2 => 'Perform a filtered search for newsletter recipients.',
+                5 => '',
+            ],
+            'operationId' => [
+                2 => 'readNewsletterRecipient',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            'responses' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            '_context' => [
+                2 => $o[11],
+                $o[4],
+                5 => $o[6],
+                7 => $o[10],
+                $o[9],
+            ],
+            'name' => [
+                3 => 'Api-Basic-Parameters',
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                6 => 1009,
+                9 => 1009,
+                1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                [
+                    $o[7],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'response' => [
+                5 => '200',
+            ],
+            '_unmerged' => [
+                5 => [
+                    $o[7],
+                ],
+            ],
+            'items' => [
+                7 => $o[8],
+            ],
+            'ref' => [
+                8 => '#/components/schemas/AccountNewsletterRecipientResult',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired' => [
+            'allowGuest' => [
+                12 => false,
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                13 => '/store-api/account/newsletter-recipient',
+            ],
+            'name' => [
+                13 => 'store-api.newsletter.recipient',
+            ],
+            'methods' => [
+                13 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[12],
+        $o[13],
+    ],
+    []
+); }];

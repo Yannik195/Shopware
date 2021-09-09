@@ -1,0 +1,237 @@
+<?php //Shopware%255CCore%255CContent%255CMailTemplate%255CApi%255CMailActionController%2523build
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/mail-template/build',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Mail Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Preview a mail template',
+            ],
+            'description' => [
+                1 => 'Generates a preview of a mail template.',
+                5 => 'Only the property `templateData` is used. It provides additional variables to the templating engine.',
+                'An associative array that is handed over to the templating engine and can be used as variables in the mail content.',
+                9 => 'The content of the mail as plain text.',
+                'The content of mail mail template in html format.',
+                14 => 'The rendered preview of the mail template.',
+            ],
+            'operationId' => [
+                1 => 'build',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[14],
+                ],
+            ],
+            '_context' => [
+                1 => $o[18],
+                $o[3],
+                4 => $o[13],
+                $o[8],
+                $o[7],
+                9 => $o[12],
+                $o[11],
+                14 => $o[15],
+                16 => $o[17],
+            ],
+            'required' => [
+                2 => true,
+                4 => [
+                    'mailTemplateType',
+                    'mailTemplate',
+                ],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+                14 => [
+                    $o[16],
+                ],
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                1009,
+                11 => 1009,
+                1009,
+                1009,
+                15 => 1009,
+                17 => 1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[5],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                [
+                    $o[9],
+                ],
+                [
+                    $o[4],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                    $o[9],
+                ],
+                [
+                    $o[6],
+                ],
+                9 => [
+                    $o[10],
+                ],
+            ],
+            'property' => [
+                5 => 'mailTemplateType',
+                'templateData',
+                9 => 'mailTemplate',
+                'contentHtml',
+            ],
+            'type' => [
+                5 => 'object',
+                'object',
+                9 => 'object',
+                'string',
+                16 => 'string',
+            ],
+            'example' => [
+                6 => [
+                    'order' => [
+                        'orderNumber' => 5000,
+                        'customerName' => 'Example Customer',
+                    ],
+                    'messageOfTheDay' => 'An apple a day keeps the doctor away!',
+                ],
+                10 => 'Hello {{ order.customerName }}, this is example mail content, the current date is {{ \'now\'|date(\'d/m/Y\') }}',
+            ],
+            'additionalProperties' => [
+                6 => true,
+            ],
+            'response' => [
+                14 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                19 => '/api/_action/mail-template/build',
+            ],
+            'name' => [
+                19 => 'api.action.mail_template.build',
+            ],
+            'methods' => [
+                19 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[19],
+    ],
+    []
+); }];

@@ -1,0 +1,290 @@
+<?php //Shopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CChangeCustomerProfileRoute%2523change
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/account/change-profile',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Profile',
+                ],
+            ],
+            'summary' => [
+                1 => 'Change the customer\'s information',
+            ],
+            'description' => [
+                1 => 'Make changes to a customer\'s account, like changing their name, salutation or title.',
+                5 => 'Id of the salutation for the customer account. Fetch options using `salutation` endpoint.',
+                7 => '(Academic) title of the customer',
+                9 => 'Customer first name. Value will be reused for shipping and billing address if not provided explicitly.',
+                11 => 'Customer last name. Value will be reused for shipping and billing address if not provided explicitly.',
+                13 => 'Company of the customer. Only required when `accountType` is `business`.',
+                15 => 'Birthday day',
+                17 => 'Birthday month',
+                19 => 'Birthday year',
+                22 => 'Returns a success response indicating a successful update',
+            ],
+            'operationId' => [
+                1 => 'changeProfile',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[22],
+                ],
+            ],
+            '_context' => [
+                1 => $o[26],
+                $o[3],
+                4 => $o[21],
+                $o[6],
+                7 => $o[8],
+                9 => $o[10],
+                11 => $o[12],
+                13 => $o[14],
+                15 => $o[16],
+                17 => $o[18],
+                19 => $o[20],
+                22 => $o[23],
+                24 => $o[25],
+            ],
+            'required' => [
+                2 => true,
+                4 => [
+                    'salutationId',
+                    'firstName',
+                    'lastName',
+                ],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+                22 => [
+                    $o[24],
+                ],
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                14 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                18 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                20 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                23 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                25 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                8 => 1009,
+                10 => 1009,
+                12 => 1009,
+                14 => 1009,
+                16 => 1009,
+                18 => 1009,
+                20 => 1009,
+                1009,
+                23 => 1009,
+                25 => 1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+                20 => 'Annotation',
+                'Annotation',
+                23 => 'Annotation',
+                25 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                20 => 'DocParser',
+                'DocParser',
+                23 => 'DocParser',
+                25 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                14 => 'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                18 => 'Shopware\\Core\\Framework\\Compatibility',
+                20 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                23 => 'Shopware\\Core\\Framework\\Compatibility',
+                25 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                20 => [
+                    $o[19],
+                ],
+                [
+                    $o[4],
+                ],
+                23 => [
+                    $o[22],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                    $o[7],
+                    $o[9],
+                    $o[11],
+                    $o[13],
+                    $o[15],
+                    $o[17],
+                    $o[19],
+                ],
+            ],
+            'property' => [
+                5 => 'salutationId',
+                7 => 'title',
+                9 => 'firstName',
+                11 => 'lastName',
+                13 => 'company',
+                15 => 'birthdayDay',
+                17 => 'birthdayMonth',
+                19 => 'birthdayYear',
+            ],
+            'type' => [
+                5 => 'string',
+                7 => 'string',
+                9 => 'string',
+                11 => 'string',
+                13 => 'string',
+                15 => 'integer',
+                17 => 'integer',
+                19 => 'integer',
+            ],
+            'response' => [
+                22 => '200',
+            ],
+            'ref' => [
+                24 => '#/components/schemas/SuccessResponse',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired' => [
+            'allowGuest' => [
+                27 => true,
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                28 => '/store-api/account/change-profile',
+            ],
+            'name' => [
+                28 => 'store-api.account.change-profile',
+            ],
+            'methods' => [
+                28 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[27],
+        $o[28],
+    ],
+    []
+); }];

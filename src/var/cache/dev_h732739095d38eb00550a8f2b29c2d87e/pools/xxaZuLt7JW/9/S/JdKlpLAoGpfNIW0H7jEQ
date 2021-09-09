@@ -1,0 +1,109 @@
+<?php //Shopware%255CCore%255CFramework%255CApi%255CController%255CCacheController%2523clearCacheAndScheduleWarmUp
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Delete'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Delete')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Acl'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Acl')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/cache_warmup',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'System Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Clear and warm up caches',
+            ],
+            'description' => [
+                1 => 'After the cache has been cleared, new cache entries are generated asynchronously.',
+                'Returns a no content response indicating that the cache has been cleared and generation of new cache has started.',
+            ],
+            'operationId' => [
+                1 => 'clearCacheAndScheduleWarmUp',
+            ],
+            'responses' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            '_context' => [
+                1 => $o[4],
+                $o[3],
+            ],
+            'response' => [
+                2 => '204',
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                5 => '/api/_action/cache_warmup',
+            ],
+            'name' => [
+                5 => 'api.action.cache.delete_and_warmup',
+            ],
+            'methods' => [
+                5 => [
+                    'DELETE',
+                ],
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Acl' => [
+            'value' => [
+                6 => [
+                    'system:clear:cache',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[5],
+        $o[6],
+    ],
+    []
+); }];

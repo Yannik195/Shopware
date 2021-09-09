@@ -1,0 +1,386 @@
+<?php //Shopware%255CCore%255CFramework%255CApi%255CController%255CSyncController%2523sync
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Annotations\\Items'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/sync',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Bulk Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Bulk edit entities',
+            ],
+            'description' => [
+                1 => 'Starts a sync process for the list of provided actions. This can be inserts, upserts, updates and deletes on different entities.'."\n"
+                    ."\n"
+                    .'to an asynchronous process in the background. You can control the behaviour with the `single-operation` and `indexing-behavior` header.',
+                'To continue upcoming actions on errors, set the `fail-on-error` header to `false`.',
+                6 => 'Controls weather the data is written at once or in seperate transactions.'."\n"
+                    .'- `true`: Data will be written in a single transaction',
+                10 => 'Controls the indexing behavior.'."\n"
+                    .'- `disable-indexing`: Data indexing is completely disabled',
+                18 => 'The action indicates what should happen with the provided payload.'."\n"
+                    .'* `upsert`: The Sync API does not differ between create and update operations,'."\n"
+                    .'but always performs an upsert operation. During an upsert, the system checks whether the entity already exists in the'."\n"
+                    .'system and updates it if an identifier has been passed, otherwise a new entity is created with this identifier.'."\n"
+                    .'* `delete`: Deletes entites with the provided identifiers',
+                20 => 'The entity that should be processed with the payload.',
+                22 => 'Contains a list of changesets for an entity. If the action type is `delete`,'."\n"
+                    .'a list of identifiers can be provided.',
+                28 => 'Returns a sync result containing information about the updated entities',
+                31 => 'Object with information about the updated entites',
+                33 => 'Indicator if the sync was successful.',
+            ],
+            'operationId' => [
+                1 => 'sync',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[6],
+                    $o[10],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[14],
+            ],
+            'responses' => [
+                1 => [
+                    $o[28],
+                ],
+            ],
+            '_context' => [
+                1 => $o[36],
+                $o[5],
+                $o[4],
+                6 => $o[9],
+                $o[8],
+                10 => $o[13],
+                $o[12],
+                14 => $o[15],
+                16 => $o[27],
+                $o[26],
+                $o[19],
+                20 => $o[21],
+                22 => $o[25],
+                $o[24],
+                28 => $o[29],
+                30 => $o[35],
+                $o[32],
+                33 => $o[34],
+            ],
+            'name' => [
+                2 => 'fail-on-error',
+                6 => 'single-operation',
+                10 => 'indexing-behavior',
+            ],
+            'in' => [
+                2 => 'header',
+                6 => 'header',
+                10 => 'header',
+            ],
+            'schema' => [
+                2 => $o[3],
+                6 => $o[7],
+                10 => $o[11],
+            ],
+            'type' => [
+                3 => 'boolean',
+                7 => 'boolean',
+                11 => 'string',
+                16 => 'array',
+                'object',
+                'string',
+                20 => 'string',
+                22 => 'array',
+                'object',
+                31 => 'object',
+                33 => 'boolean',
+            ],
+            'default' => [
+                3 => true,
+                7 => false,
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                19 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                21 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                24 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                29 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                32 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                34 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                1009,
+                8 => 1009,
+                1009,
+                12 => 1009,
+                1009,
+                15 => 1009,
+                19 => 1009,
+                21 => 1009,
+                24 => 1009,
+                1009,
+                1009,
+                1009,
+                29 => 1009,
+                32 => 1009,
+                34 => 1009,
+                1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                15 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+                24 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+                29 => 'Annotation',
+                32 => 'Annotation',
+                34 => 'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                15 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+                24 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+                29 => 'DocParser',
+                32 => 'DocParser',
+                34 => 'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                19 => 'Shopware\\Core\\Framework\\Compatibility',
+                21 => 'Shopware\\Core\\Framework\\Compatibility',
+                24 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                29 => 'Shopware\\Core\\Framework\\Compatibility',
+                32 => 'Shopware\\Core\\Framework\\Compatibility',
+                34 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[6],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[10],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                21 => [
+                    $o[20],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                [
+                    $o[22],
+                ],
+                [
+                    $o[17],
+                ],
+                [
+                    $o[16],
+                ],
+                29 => [
+                    $o[28],
+                ],
+                32 => [
+                    $o[31],
+                ],
+                34 => [
+                    $o[33],
+                ],
+                [
+                    $o[30],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'enum' => [
+                11 => [
+                    'use-queue-indexing',
+                    'disable-indexing',
+                ],
+                18 => [
+                    'upsert',
+                    'delete',
+                ],
+            ],
+            'required' => [
+                14 => true,
+                17 => [
+                    'action',
+                    'entity',
+                    'payload',
+                ],
+            ],
+            '_unmerged' => [
+                14 => [
+                    $o[16],
+                ],
+                28 => [
+                    $o[30],
+                ],
+            ],
+            'items' => [
+                16 => $o[17],
+                22 => $o[23],
+            ],
+            'properties' => [
+                17 => [
+                    $o[18],
+                    $o[20],
+                    $o[22],
+                ],
+                30 => [
+                    $o[31],
+                    $o[33],
+                ],
+            ],
+            'property' => [
+                18 => 'action',
+                20 => 'entity',
+                22 => 'payload',
+                31 => 'data',
+                33 => 'success',
+            ],
+            'example' => [
+                20 => 'product',
+            ],
+            'response' => [
+                28 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                37 => '/api/_action/sync',
+            ],
+            'name' => [
+                37 => 'api.action.sync',
+            ],
+            'methods' => [
+                37 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[37],
+    ],
+    []
+); }];

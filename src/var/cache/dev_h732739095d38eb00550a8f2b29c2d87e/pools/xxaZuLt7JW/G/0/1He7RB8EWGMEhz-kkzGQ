@@ -1,0 +1,185 @@
+<?php //Shopware%255CCore%255CContent%255CProduct%255CSalesChannel%255CSuggest%255CCachedProductSuggestRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'product',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/search-suggest',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Product',
+                ],
+            ],
+            'summary' => [
+                2 => 'Search for products (suggest)',
+            ],
+            'description' => [
+                2 => 'Can be used to implement search previews or suggestion listings, that don’t require any interaction.',
+                6 => 'Using the search parameter, the server performs a text search on all records based on their data model and weighting as defined in the entity definition using the SearchRanking flag.',
+                9 => 'Returns a product listing containing all products and additional fields.'."\n"
+                    ."\n"
+                    .'Note: Aggregations, currentFilters and availableSortings are empty in this response. If you need them to display a listing, use the /search route instead.',
+            ],
+            'operationId' => [
+                2 => 'searchSuggest',
+            ],
+            'requestBody' => [
+                2 => $o[3],
+            ],
+            'responses' => [
+                2 => [
+                    $o[9],
+                ],
+            ],
+            '_context' => [
+                2 => $o[13],
+                $o[4],
+                5 => $o[8],
+                $o[7],
+                9 => $o[10],
+                11 => $o[12],
+            ],
+            'required' => [
+                3 => true,
+                5 => [
+                    'search',
+                ],
+            ],
+            '_unmerged' => [
+                3 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[11],
+                ],
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                7 => 1009,
+                1009,
+                10 => 1009,
+                12 => 1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[5],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'properties' => [
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'property' => [
+                6 => 'search',
+            ],
+            'type' => [
+                6 => 'string',
+            ],
+            'response' => [
+                9 => '200',
+            ],
+            'ref' => [
+                11 => '#/components/schemas/ProductListingResult',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                14 => '/store-api/search-suggest',
+            ],
+            'name' => [
+                14 => 'store-api.search.suggest',
+            ],
+            'methods' => [
+                14 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[14],
+    ],
+    []
+); }];

@@ -1,0 +1,175 @@
+<?php //Shopware%255CCore%255CContent%255CMailTemplate%255CApi%255CMailActionController%2523validate
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/mail-template/validate',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Mail Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Validate a mail content',
+            ],
+            'description' => [
+                1 => 'Validates if content for a mail can be rendered without sending an email.',
+                5 => 'The content of the mail in HTML format.',
+                7 => 'The content of the mail as plain text.',
+                10 => 'Returns a no content response indicating the mail content was rendered successfully.',
+            ],
+            'operationId' => [
+                1 => 'validate',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[10],
+                ],
+            ],
+            '_context' => [
+                1 => $o[12],
+                $o[3],
+                4 => $o[9],
+                $o[6],
+                7 => $o[8],
+                10 => $o[11],
+            ],
+            'required' => [
+                2 => true,
+                4 => [
+                    'contentHtml',
+                    'contentPlain',
+                ],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                8 => 1009,
+                1009,
+                11 => 1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[4],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                    $o[7],
+                ],
+            ],
+            'property' => [
+                5 => 'contentHtml',
+                7 => 'contentPlain',
+            ],
+            'type' => [
+                5 => 'string',
+                7 => 'string',
+            ],
+            'response' => [
+                10 => '204',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                13 => '/api/_action/mail-template/validate',
+            ],
+            'name' => [
+                13 => 'api.action.mail_template.validate',
+            ],
+            'methods' => [
+                13 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[13],
+    ],
+    []
+); }];

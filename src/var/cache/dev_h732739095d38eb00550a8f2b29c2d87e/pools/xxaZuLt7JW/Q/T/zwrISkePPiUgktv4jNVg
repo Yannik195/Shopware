@@ -1,0 +1,349 @@
+<?php //Shopware%255CCore%255CCheckout%255CDocument%255CDocumentGeneratorController%2523uploadToDocument
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/document/{documentId}/upload',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Document Management',
+                ],
+            ],
+            'summary' => [
+                1 => 'Upload a file for a document',
+            ],
+            'description' => [
+                1 => 'Uploads a file for a document. This prevents the document from beeing dynamically generated and delivers the uploaded file instead, when the document is downloaded.'."\n"
+                    ."\n"
+                    .'Note:'."\n"
+                    .'* The document is required to be `static`'."\n"
+                    .'* A document can only have one media file'."\n"
+                    ."\n"
+                    .'The are two methods of providing a file to this route:'."\n"
+                    .' * Use a typical file upload and provide the file in the request'."\n"
+                    .' * Fetch the file from an url. This only works if the `shopware.media.enable_url_upload_feature` variable is set to true in the shop environment.'."\n"
+                    .'To use file upload via url, the content type has to be `application/json` and the parameter `url` has to be provided.',
+                'Identifier of the document the new file should be added to.',
+                6 => 'Name of the uploaded file.',
+                10 => 'Extension of the uploaded file. For example `pdf`',
+                21 => 'The url of the document that will be downloaded.',
+                24 => 'Document uploaded successful',
+                27 => 'Identifier of the document.',
+                29 => 'A unique hash code which is required to open the document.',
+            ],
+            'operationId' => [
+                1 => 'uploadToDocument',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[6],
+                    $o[10],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[14],
+            ],
+            'responses' => [
+                1 => [
+                    $o[24],
+                ],
+            ],
+            '_context' => [
+                1 => $o[32],
+                $o[5],
+                $o[4],
+                6 => $o[9],
+                $o[8],
+                10 => $o[13],
+                $o[12],
+                14 => $o[19],
+                $o[18],
+                $o[17],
+                20 => $o[23],
+                $o[22],
+                24 => $o[25],
+                26 => $o[31],
+                $o[28],
+                29 => $o[30],
+            ],
+            'name' => [
+                2 => 'documentId',
+                6 => 'fileName',
+                10 => 'extension',
+            ],
+            'in' => [
+                2 => 'path',
+                6 => 'query',
+                10 => 'query',
+            ],
+            'required' => [
+                2 => true,
+                6 => true,
+                10 => true,
+                20 => [
+                    'url',
+                ],
+            ],
+            'schema' => [
+                2 => $o[3],
+                6 => $o[7],
+                10 => $o[11],
+                15 => $o[16],
+            ],
+            'type' => [
+                3 => 'string',
+                7 => 'string',
+                11 => 'string',
+                16 => 'string',
+                21 => 'string',
+                27 => 'string',
+                29 => 'string',
+            ],
+            'pattern' => [
+                3 => '^[0-9a-f]{32}$',
+                27 => '^[0-9a-f]{32}$',
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                22 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                25 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                28 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                30 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                1009,
+                8 => 1009,
+                1009,
+                12 => 1009,
+                1009,
+                17 => 1009,
+                1009,
+                1009,
+                22 => 1009,
+                1009,
+                25 => 1009,
+                28 => 1009,
+                30 => 1009,
+                1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                17 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                22 => 'Annotation',
+                'Annotation',
+                25 => 'Annotation',
+                28 => 'Annotation',
+                30 => 'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                17 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                22 => 'DocParser',
+                'DocParser',
+                25 => 'DocParser',
+                28 => 'DocParser',
+                30 => 'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                22 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                25 => 'Shopware\\Core\\Framework\\Compatibility',
+                28 => 'Shopware\\Core\\Framework\\Compatibility',
+                30 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[6],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[10],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                [
+                    $o[15],
+                ],
+                [
+                    $o[14],
+                ],
+                22 => [
+                    $o[21],
+                ],
+                [
+                    $o[20],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                28 => [
+                    $o[27],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                [
+                    $o[26],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'content' => [
+                14 => [
+                    $o[15],
+                ],
+            ],
+            '_unmerged' => [
+                14 => [
+                    $o[20],
+                ],
+                24 => [
+                    $o[26],
+                ],
+            ],
+            'mediaType' => [
+                15 => 'application/octet-stream',
+            ],
+            'format' => [
+                16 => 'binary',
+            ],
+            'properties' => [
+                20 => [
+                    $o[21],
+                ],
+                26 => [
+                    $o[27],
+                    $o[29],
+                ],
+            ],
+            'property' => [
+                21 => 'url',
+                27 => 'documentId',
+                29 => 'documentDeepLink',
+            ],
+            'response' => [
+                24 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                33 => '/api/_action/document/{documentId}/upload',
+            ],
+            'name' => [
+                33 => 'api.action.document.upload',
+            ],
+            'methods' => [
+                33 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[33],
+    ],
+    []
+); }];

@@ -1,0 +1,151 @@
+<?php //Shopware%255CCore%255CFramework%255CApi%255CController%255CInfoController%2523info
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_info/openapi3.json',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'System Info & Healthcheck',
+                ],
+            ],
+            'summary' => [
+                1 => 'Get OpenAPI Specification',
+            ],
+            'description' => [
+                1 => 'Get information about the API in OpenAPI format.',
+                'Type of the api',
+                6 => 'Returns information about the API.',
+            ],
+            'operationId' => [
+                1 => 'api-info',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[6],
+                ],
+            ],
+            '_context' => [
+                1 => $o[8],
+                $o[5],
+                $o[4],
+                6 => $o[7],
+            ],
+            'name' => [
+                2 => 'type',
+            ],
+            'in' => [
+                2 => 'query',
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            'type' => [
+                3 => 'string',
+            ],
+            'enum' => [
+                3 => [
+                    'jsonapi',
+                    'json',
+                ],
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                1009,
+                7 => 1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'response' => [
+                6 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                9 => '/api/_info/openapi3.json',
+            ],
+            'name' => [
+                9 => 'api.info.openapi3',
+            ],
+            'defaults' => [
+                9 => [
+                    'auth_required' => '%shopware.api.api_browser.auth_required_str%',
+                ],
+            ],
+            'methods' => [
+                9 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[9],
+    ],
+    []
+); }];

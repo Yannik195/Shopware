@@ -1,0 +1,228 @@
+<?php //Shopware%255CCore%255CFramework%255CMigration%255CApi%255CMigrationController%2523migrateDestructive
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Acl'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Acl')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/database/migrate-destructive',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Database Migrations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Execute destructive migrations',
+            ],
+            'description' => [
+                1 => 'Executes all destructive migrations for the provided bundle name.',
+                5 => 'Name of the bundle whose migrations are to be synced.',
+                7 => ' The mode defines what type of migrations are executed.'."\n"
+                    .'* Possible values:'."\n"
+                    .'* `all`: Execute all migrations'."\n"
+                    .'* `blue-green`: Blue-green safe'."\n"
+                    .'    * update from 6.a.* to 6.(a+1).0 -> migrations for major 6.a are NOT executed'."\n"
+                    .'    * rollback from 6.(a+1).0 to 6.a.* is still possible'."\n"
+                    .'    * update from 6.(a+1).0 to 6.(a+1).1 or higher - migrations for major 6.a are executed'."\n"
+                    .'    * rollback possible from 6.(a+1).1 to 6.(a+1).0 possible'."\n"
+                    .'    * but rollback to 6.a.* not possible anymore!'."\n"
+                    .'* `safe`: Executing the migrations of the penultimate major. This should always be safe',
+                9 => 'Limit the amout of migrations to be executed. By default, there is no limit.',
+                11 => 'A timestamp that controls until which `creation_date` migrations are executed.'."\n"
+                    .'    By default, all migrations are executed.',
+                14 => 'Returns a no content response indicating a successful sync.',
+            ],
+            'operationId' => [
+                1 => 'migrateDestructive',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[14],
+                ],
+            ],
+            '_context' => [
+                1 => $o[16],
+                $o[3],
+                4 => $o[13],
+                $o[6],
+                7 => $o[8],
+                9 => $o[10],
+                11 => $o[12],
+                14 => $o[15],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                8 => 1009,
+                10 => 1009,
+                12 => 1009,
+                1009,
+                15 => 1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                8 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                'Annotation',
+                15 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                8 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                'DocParser',
+                15 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                [
+                    $o[4],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                    $o[7],
+                    $o[9],
+                    $o[11],
+                ],
+            ],
+            'property' => [
+                5 => 'identifier',
+                7 => 'mode',
+                9 => 'limit',
+                11 => 'until',
+            ],
+            'type' => [
+                5 => 'string',
+                7 => 'string',
+                9 => 'integer',
+                11 => 'integer',
+            ],
+            'default' => [
+                5 => 'core',
+                7 => 'safe',
+            ],
+            'enum' => [
+                7 => [
+                    'all',
+                    'blue-green',
+                    'safe',
+                ],
+            ],
+            'response' => [
+                14 => '204',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                17 => '/api/_action/database/migrate-destructive',
+            ],
+            'name' => [
+                17 => 'api.action.database.migrate-destructive',
+            ],
+            'methods' => [
+                17 => [
+                    'POST',
+                ],
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Acl' => [
+            'value' => [
+                18 => [
+                    'system:core:update',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[17],
+        $o[18],
+    ],
+    []
+); }];

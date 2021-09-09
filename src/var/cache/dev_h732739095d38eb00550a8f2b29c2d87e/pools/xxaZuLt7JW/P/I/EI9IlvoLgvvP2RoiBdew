@@ -1,0 +1,348 @@
+<?php //Shopware%255CCore%255CContent%255CCategory%255CSalesChannel%255CCachedNavigationRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'category',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/navigation/{requestActiveId}/{requestRootId}',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Category',
+                ],
+            ],
+            'summary' => [
+                2 => 'Fetch a navigation menu',
+            ],
+            'description' => [
+                2 => 'This endpoint returns categories that can be used as a page navigation. You can either return them as a tree or as a flat list. You can also control the depth of the tree.'."\n"
+                    ."\n"
+                    .'Instead of passing uuids, you can also use one of the following aliases for the activeId and rootId parameters to get the respective navigations of your sales channel.'."\n"
+                    ."\n"
+                    .'* main-navigation'."\n"
+                    .'* service-navigation'."\n"
+                    .'* footer-navigation',
+                5 => 'Instructs Shopware to try and resolve SEO URLs for the given navigation item',
+                9 => 'Identifier of the active category in the navigation tree (if not used, just set to the same as rootId).',
+                13 => 'Identifier of the root category for your desired navigation tree. You can use it to fetch sub-trees of your navigation tree.',
+                20 => 'Determines the depth of fetched navigation levels.',
+                24 => 'Return the categories as a tree or as a flat list.',
+                29 => 'All available navigations',
+            ],
+            'operationId' => [
+                2 => 'readNavigation',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                    $o[5],
+                    $o[9],
+                    $o[13],
+                ],
+            ],
+            'requestBody' => [
+                2 => $o[17],
+            ],
+            'responses' => [
+                2 => [
+                    $o[29],
+                ],
+            ],
+            '_context' => [
+                2 => $o[33],
+                $o[4],
+                5 => $o[8],
+                $o[7],
+                9 => $o[12],
+                $o[11],
+                13 => $o[16],
+                $o[15],
+                17 => $o[18],
+                19 => $o[28],
+                $o[21],
+                22 => $o[23],
+                24 => $o[25],
+                26 => $o[27],
+                29 => $o[30],
+                31 => $o[32],
+            ],
+            'name' => [
+                3 => 'Api-Basic-Parameters',
+                5 => 'sw-include-seo-urls',
+                9 => 'requestActiveId',
+                13 => 'requestRootId',
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                18 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                21 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                23 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                25 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                27 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                30 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                32 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                7 => 1009,
+                1009,
+                11 => 1009,
+                1009,
+                15 => 1009,
+                1009,
+                18 => 1009,
+                21 => 1009,
+                23 => 1009,
+                25 => 1009,
+                27 => 1009,
+                1009,
+                30 => 1009,
+                32 => 1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                'Annotation',
+                15 => 'Annotation',
+                'Annotation',
+                18 => 'Annotation',
+                21 => 'Annotation',
+                23 => 'Annotation',
+                25 => 'Annotation',
+                27 => 'Annotation',
+                'Annotation',
+                30 => 'Annotation',
+                32 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                'DocParser',
+                15 => 'DocParser',
+                'DocParser',
+                18 => 'DocParser',
+                21 => 'DocParser',
+                23 => 'DocParser',
+                25 => 'DocParser',
+                27 => 'DocParser',
+                'DocParser',
+                30 => 'DocParser',
+                32 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                18 => 'Shopware\\Core\\Framework\\Compatibility',
+                21 => 'Shopware\\Core\\Framework\\Compatibility',
+                23 => 'Shopware\\Core\\Framework\\Compatibility',
+                25 => 'Shopware\\Core\\Framework\\Compatibility',
+                27 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                30 => 'Shopware\\Core\\Framework\\Compatibility',
+                32 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[5],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                [
+                    $o[9],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                [
+                    $o[13],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                21 => [
+                    $o[20],
+                ],
+                23 => [
+                    $o[22],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                27 => [
+                    $o[26],
+                ],
+                [
+                    $o[19],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                32 => [
+                    $o[31],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'in' => [
+                5 => 'header',
+                9 => 'path',
+                13 => 'path',
+            ],
+            'required' => [
+                5 => false,
+                9 => true,
+                13 => true,
+                17 => true,
+            ],
+            'schema' => [
+                5 => $o[6],
+                9 => $o[10],
+                13 => $o[14],
+            ],
+            'type' => [
+                6 => 'boolean',
+                10 => 'string',
+                14 => 'string',
+                22 => 'integer',
+                26 => 'boolean',
+            ],
+            'pattern' => [
+                10 => '^[0-9a-f]{32}$',
+                14 => '^[0-9a-f]{32}$',
+            ],
+            '_unmerged' => [
+                17 => [
+                    $o[19],
+                ],
+                20 => [
+                    $o[22],
+                ],
+                24 => [
+                    $o[26],
+                ],
+                29 => [
+                    $o[31],
+                ],
+            ],
+            'properties' => [
+                19 => [
+                    $o[20],
+                    $o[24],
+                ],
+            ],
+            'property' => [
+                20 => 'depth',
+                24 => 'buildTree',
+            ],
+            'default' => [
+                22 => '2',
+                26 => 'true',
+            ],
+            'response' => [
+                29 => '200',
+            ],
+            'ref' => [
+                31 => '#/components/schemas/NavigationRouteResponse',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                34 => '/store-api/navigation/{activeId}/{rootId}',
+            ],
+            'name' => [
+                34 => 'store-api.navigation',
+            ],
+            'methods' => [
+                34 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[34],
+    ],
+    []
+); }];

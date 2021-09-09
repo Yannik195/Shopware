@@ -1,0 +1,245 @@
+<?php //Shopware%255CCore%255CCheckout%255CPayment%255CSalesChannel%255CCachedPaymentMethodRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'payment_method',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/payment-method',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Payment & Shipping',
+                ],
+            ],
+            'summary' => [
+                2 => 'Fetch payment methods',
+            ],
+            'description' => [
+                2 => 'Perform a filtered search for payment methods, for use in the checkout process.',
+                5 => 'List only available payment methods. This filters payment methods which can not be used in the actual context because of their availability rule.',
+                9 => 'Entity search result containing payment methods',
+            ],
+            'operationId' => [
+                2 => 'readPaymentMethod',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                    $o[5],
+                ],
+            ],
+            'responses' => [
+                2 => [
+                    $o[9],
+                ],
+            ],
+            '_context' => [
+                2 => $o[21],
+                $o[4],
+                5 => $o[8],
+                $o[7],
+                9 => $o[10],
+                11 => $o[20],
+                $o[13],
+                14 => $o[19],
+                $o[18],
+                $o[17],
+            ],
+            'name' => [
+                3 => 'Api-Basic-Parameters',
+                5 => 'onlyAvailable',
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                7 => 1009,
+                1009,
+                10 => 1009,
+                13 => 1009,
+                17 => 1009,
+                1009,
+                1009,
+                1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                10 => 'Annotation',
+                13 => 'Annotation',
+                17 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                10 => 'DocParser',
+                13 => 'DocParser',
+                17 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[5],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                [
+                    $o[15],
+                ],
+                [
+                    $o[14],
+                ],
+                [
+                    $o[11],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            'in' => [
+                5 => 'query',
+            ],
+            'schema' => [
+                5 => $o[6],
+            ],
+            'type' => [
+                6 => 'boolean',
+                11 => 'object',
+                14 => 'object',
+                'array',
+            ],
+            'response' => [
+                9 => '200',
+            ],
+            '_unmerged' => [
+                9 => [
+                    $o[11],
+                ],
+            ],
+            'allOf' => [
+                11 => [
+                    $o[12],
+                    $o[14],
+                ],
+            ],
+            'ref' => [
+                12 => '#/components/schemas/EntitySearchResult',
+                16 => '#/components/schemas/PaymentMethod',
+            ],
+            'properties' => [
+                14 => [
+                    $o[15],
+                ],
+            ],
+            'property' => [
+                15 => 'elements',
+            ],
+            'items' => [
+                15 => $o[16],
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                22 => '/store-api/payment-method',
+            ],
+            'name' => [
+                22 => 'store-api.payment.method',
+            ],
+            'methods' => [
+                22 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[22],
+    ],
+    []
+); }];

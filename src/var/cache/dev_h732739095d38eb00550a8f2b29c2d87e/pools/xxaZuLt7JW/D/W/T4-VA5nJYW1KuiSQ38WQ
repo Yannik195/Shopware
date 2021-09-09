@@ -1,0 +1,228 @@
+<?php //Shopware%255CCore%255CContent%255CProduct%255CSalesChannel%255CListing%255CResolveCriteriaProductListingRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'product',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/product-listing/{categoryId}',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Product',
+                ],
+            ],
+            'summary' => [
+                2 => 'Fetch a product listing by category',
+            ],
+            'description' => [
+                2 => 'Fetches a product listing for a specific category. It also provides filters, sortings and property aggregations, analogous to the /search endpoint.',
+                'Identifier of a category.',
+                15 => 'Returns a product listing containing all products and additional fields to display a listing.',
+            ],
+            'operationId' => [
+                2 => 'readProductListing',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            'requestBody' => [
+                2 => $o[7],
+            ],
+            'responses' => [
+                2 => [
+                    $o[15],
+                ],
+            ],
+            '_context' => [
+                2 => $o[19],
+                $o[6],
+                $o[5],
+                7 => $o[8],
+                9 => $o[14],
+                $o[11],
+                12 => $o[13],
+                15 => $o[16],
+                17 => $o[18],
+            ],
+            'name' => [
+                3 => 'categoryId',
+            ],
+            'in' => [
+                3 => 'path',
+            ],
+            'required' => [
+                3 => true,
+            ],
+            'schema' => [
+                3 => $o[4],
+            ],
+            'type' => [
+                4 => 'string',
+                9 => 'object',
+            ],
+            'filename' => [
+                5 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                18 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                5 => 1009,
+                1009,
+                8 => 1009,
+                11 => 1009,
+                13 => 1009,
+                1009,
+                16 => 1009,
+                18 => 1009,
+                1009,
+            ],
+            'method' => [
+                5 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                11 => 'Annotation',
+                13 => 'Annotation',
+                'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                5 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                11 => 'DocParser',
+                13 => 'DocParser',
+                'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                5 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                18 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                5 => [
+                    $o[4],
+                ],
+                [
+                    $o[3],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                [
+                    $o[9],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                [
+                    $o[2],
+                ],
+            ],
+            '_unmerged' => [
+                7 => [
+                    $o[9],
+                ],
+                15 => [
+                    $o[17],
+                ],
+            ],
+            'allOf' => [
+                9 => [
+                    $o[10],
+                    $o[12],
+                ],
+            ],
+            'ref' => [
+                10 => '#/components/schemas/ProductListingCriteria',
+                12 => '#/components/schemas/ProductListingFlags',
+                17 => '#/components/schemas/ProductListingResult',
+            ],
+            'response' => [
+                15 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                20 => '/store-api/product-listing/{categoryId}',
+            ],
+            'name' => [
+                20 => 'store-api.product.listing',
+            ],
+            'methods' => [
+                20 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[20],
+    ],
+    []
+); }];

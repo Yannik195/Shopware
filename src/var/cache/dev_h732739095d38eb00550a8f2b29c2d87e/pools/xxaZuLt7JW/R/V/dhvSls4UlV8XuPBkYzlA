@@ -1,0 +1,205 @@
+<?php //Shopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CMergeWishlistProductRoute%2523merge
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.3.4.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/customer/wishlist/merge',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Wishlist',
+                ],
+            ],
+            'summary' => [
+                1 => 'Create a wishlist for a customer',
+            ],
+            'description' => [
+                1 => 'Create a new wishlist for a logged in customer or extend the existing wishlist given a set of products.'."\n"
+                    ."\n"
+                    .'**Important constraints**'."\n"
+                    ."\n"
+                    .'* Anonymous (not logged-in) customers can not have wishlists.'."\n"
+                    .'* A customer can only have a single wishlist.'."\n"
+                    .'* The wishlist feature has to be activated.',
+                5 => 'List product id',
+                'product id',
+                10 => 'Returns a success response.',
+            ],
+            'operationId' => [
+                1 => 'mergeProductOnWishlist',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[10],
+                ],
+            ],
+            '_context' => [
+                1 => $o[14],
+                $o[3],
+                4 => $o[9],
+                $o[8],
+                $o[7],
+                10 => $o[11],
+                12 => $o[13],
+            ],
+            'required' => [
+                2 => true,
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[4],
+                ],
+                10 => [
+                    $o[12],
+                ],
+            ],
+            'filename' => [
+                3 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                1009,
+                1009,
+                11 => 1009,
+                13 => 1009,
+                1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                13 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                13 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                [
+                    $o[5],
+                ],
+                [
+                    $o[4],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                4 => [
+                    $o[5],
+                ],
+            ],
+            'property' => [
+                5 => 'productIds',
+            ],
+            'type' => [
+                5 => 'array',
+                'string',
+            ],
+            'items' => [
+                5 => $o[6],
+            ],
+            'pattern' => [
+                6 => '^[0-9a-f]{32}$',
+            ],
+            'response' => [
+                10 => '200',
+            ],
+            'ref' => [
+                12 => '#/components/schemas/SuccessResponse',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\LoginRequired' => [
+            'allowGuest' => [
+                15 => false,
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                16 => '/store-api/customer/wishlist/merge',
+            ],
+            'name' => [
+                16 => 'store-api.customer.wishlist.merge',
+            ],
+            'methods' => [
+                16 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[15],
+        $o[16],
+    ],
+    []
+); }];

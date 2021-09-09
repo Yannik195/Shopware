@@ -1,0 +1,322 @@
+<?php //Shopware%255CCore%255CCheckout%255COrder%255CApi%255COrderActionController%2523orderTransactionStateTransition
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone ($p['OpenApi\\Annotations\\Items'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Items')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Annotations\\Items'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.1.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/order_transaction/{orderTransactionId}/state/{transition}',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Order Management',
+                ],
+            ],
+            'summary' => [
+                1 => 'Transition an order transaction to a new state',
+            ],
+            'description' => [
+                1 => 'Changes the order transaction state and informs the customer via email if configured.',
+                'Identifier of the order transaction.',
+                6 => 'The `action_name` of the `state_machine_transition`. For example `process` if the order state should change from open to in progress.'."\n"
+                    ."\n"
+                    .'Note: If you choose a transition that is not available, you will get an error that lists possible transitions for the current state.',
+                13 => 'Controls if a mail should be sent to the customer.',
+                17 => 'A list of document identifiers that should be attached',
+                21 => 'A list of media identifiers that should be attached',
+                25 => 'This is the state column within the order transaction database table. There should be no need to change it from the default.',
+                28 => 'Returns information about the transition that was made. `#/components/schemas/StateMachineTransition`',
+            ],
+            'operationId' => [
+                1 => 'orderTransactionStateTransition',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[6],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[10],
+            ],
+            'responses' => [
+                1 => [
+                    $o[28],
+                ],
+            ],
+            '_context' => [
+                1 => $o[30],
+                $o[5],
+                $o[4],
+                6 => $o[9],
+                $o[8],
+                10 => $o[11],
+                12 => $o[27],
+                $o[14],
+                15 => $o[16],
+                17 => $o[20],
+                $o[19],
+                21 => $o[24],
+                $o[23],
+                25 => $o[26],
+                28 => $o[29],
+            ],
+            'name' => [
+                2 => 'orderTransactionId',
+                6 => 'transition',
+            ],
+            'in' => [
+                2 => 'path',
+                6 => 'path',
+            ],
+            'required' => [
+                2 => true,
+                6 => true,
+                10 => false,
+            ],
+            'schema' => [
+                2 => $o[3],
+                6 => $o[7],
+            ],
+            'type' => [
+                3 => 'string',
+                7 => 'string',
+                15 => 'boolean',
+                17 => 'array',
+                'string',
+                21 => 'array',
+                'string',
+                25 => 'string',
+            ],
+            'pattern' => [
+                3 => '^[0-9a-f]{32}$',
+                18 => '^[0-9a-f]{32}$',
+                22 => '^[0-9a-f]{32}$',
+            ],
+            'filename' => [
+                4 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                8 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                14 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                19 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                23 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                26 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                29 => '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                '/Users/yannik.simon/Code/Shopware/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                1009,
+                8 => 1009,
+                1009,
+                11 => 1009,
+                14 => 1009,
+                16 => 1009,
+                19 => 1009,
+                1009,
+                23 => 1009,
+                1009,
+                26 => 1009,
+                1009,
+                29 => 1009,
+                1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                'Annotation',
+                8 => 'Annotation',
+                'Annotation',
+                11 => 'Annotation',
+                14 => 'Annotation',
+                16 => 'Annotation',
+                19 => 'Annotation',
+                'Annotation',
+                23 => 'Annotation',
+                'Annotation',
+                26 => 'Annotation',
+                'Annotation',
+                29 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                'DocParser',
+                8 => 'DocParser',
+                'DocParser',
+                11 => 'DocParser',
+                14 => 'DocParser',
+                16 => 'DocParser',
+                19 => 'DocParser',
+                'DocParser',
+                23 => 'DocParser',
+                'DocParser',
+                26 => 'DocParser',
+                'DocParser',
+                29 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                8 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                14 => 'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                19 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                23 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                26 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+                29 => 'Shopware\\Core\\Framework\\Compatibility',
+                'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                [
+                    $o[2],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                [
+                    $o[6],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                [
+                    $o[17],
+                ],
+                23 => [
+                    $o[22],
+                ],
+                [
+                    $o[21],
+                ],
+                26 => [
+                    $o[25],
+                ],
+                [
+                    $o[12],
+                ],
+                29 => [
+                    $o[28],
+                ],
+                [
+                    $o[1],
+                ],
+            ],
+            '_unmerged' => [
+                10 => [
+                    $o[12],
+                ],
+                13 => [
+                    $o[15],
+                ],
+            ],
+            'properties' => [
+                12 => [
+                    $o[13],
+                    $o[17],
+                    $o[21],
+                    $o[25],
+                ],
+            ],
+            'property' => [
+                13 => 'sendMail',
+                17 => 'documentIds',
+                21 => 'mediaIds',
+                25 => 'stateFieldName',
+            ],
+            'default' => [
+                15 => true,
+                25 => 'stateId',
+            ],
+            'items' => [
+                17 => $o[18],
+                21 => $o[22],
+            ],
+            'response' => [
+                28 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                31 => '/api/_action/order_transaction/{orderTransactionId}/state/{transition}',
+            ],
+            'name' => [
+                31 => 'api.action.order.state_machine.order_transaction.transition_state',
+            ],
+            'methods' => [
+                31 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[31],
+    ],
+    []
+); }];
